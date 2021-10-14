@@ -1,0 +1,33 @@
+{
+  "name": "thelounge-theme-flat-dark",
+  "version": "1.2.0",
+  "description": "A simple flat theme with dark colours",
+  "main": "package.json",
+  "thelounge": {
+    "name": "Flat-Dark-Theme",
+    "type": "theme",
+    "css": "theme.css",
+    "themeColor": "#1e1e1e"
+  },
+  "license": "MIT",
+  "homepage": "https://github.com/aab12345/thelounge-theme-flat-dark/",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/aab12345/thelounge-theme-flat-dark.git"
+  },
+  "keywords": [
+    "dark",
+    "thelounge",
+    "thelounge-theme"
+  ],
+  "bugs": {
+    "url": "https://github.com/aab12345/thelounge-theme-flat-dark/issues"
+  },
+  "devDependencies": {
+    "stylelint": "^13.7.1",
+    "stylelint-config-standard": "^20.0.0"
+  },
+  "scripts": {
+    "test": "stylelint theme.css"
+  }
+}

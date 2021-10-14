@@ -1,0 +1,338 @@
+/*!
+ * A simple flat theme with dark colours
+ * By aab12345
+ *
+ * License: MIT
+ */
+
+/* Samsung Internet and Microsoft Edge (yes, both of them use -webkit- prefix) */
+::-webkit-input-placeholder {
+	color: rgba(131, 148, 150, 0.9);
+}
+
+:root {
+	--body-bg-color: #333333;
+	--window-bg-color: #333333;
+	--body-color: #fff;
+	--body-color-muted: #b7c5d1;
+	--link-color: #268bd2;
+	--unread-marker-color: #268bd2;
+	--date-marker-color: #edf10a;
+	--highlight-bg-color: #3c3838;
+	--highlight-border-color: #fdfdfd33;
+	--background-light-color: #1e1e1e;
+	--overlay-bg-color: rgba(0, 0, 0, 0.8);
+}
+
+::placeholder {
+	color: #3d99db;
+	opacity: 1; /* fix opacity in Firefox */
+}
+
+::-webkit-scrollbar-thumb:vertical {
+	background: hsl(0, 0%, 12%);
+}
+
+::-webkit-scrollbar-thumb:vertical:hover {
+	background: hsl(192, 100%, 30%);
+}
+
+::-webkit-scrollbar-thumb:vertical:active {
+	background: hsl(192, 100%, 40%);
+}
+
+html {
+	scrollbar-color: hsl(192, 100%, 25%) hsla(192, 100%, 25%, 10%);
+	scrollbar-width: thin;
+}
+
+#form #nick { 
+  display: unset; 
+}
+
+.logo-inverted {
+  display: none;
+}
+
+.window .logo,
+#loading .logo {
+	display: none;
+}
+
+.window .logo-inverted,
+#loading .logo-inverted {
+	display: inline-block;
+}
+
+#sidebar {
+	color: var(--body-color-muted);
+	background-color: var(--background-light-color);
+}
+
+#sidebar .logo-container {
+	padding-top: 5px;
+}
+
+#sidebar .logo-inverted {
+	height: 35px;
+}
+
+i.hostmask {
+	font-size: 90%;
+	opacity: 0.7;
+}
+
+.irc-monospace,
+pre,
+code,
+kbd {
+	color: #ddd;
+	background-color: #444;
+	border-color: #666;
+	box-shadow: none;
+	text-shadow: none;
+}
+
+#chat .count::before,
+#form #submit,
+#form #upload,
+#chat button.menu,
+#chat button.mentions,
+#viewport .lt,
+#viewport .rt {
+	color: var(--body-color-muted);
+}
+
+#context-menu,
+.textcomplete-menu {
+	border: 0;
+	background-color: #657b83;
+}
+
+.context-menu-item,
+.textcomplete-item {
+	transition: none;
+}
+
+.context-menu-divider {
+	background-color: #aaa;
+}
+
+#loading,
+#chat .userlist,
+.window,
+body {
+	background-color: var(--body-bg-color);
+	color: var(--body-color);
+}
+
+.context-menu-item,
+.textcomplete-item a {
+	color: var(--body-color);
+}
+
+#chat .show-more .btn {
+	background: rgba(88, 110, 117, 0.3);
+	color: var(--body-color);
+	border: 0;
+	border-radius: 0;
+	text-transform: uppercase;
+	transition: background 0.2s;
+}
+
+#chat .show-more .btn:hover {
+	background: #84ce88;
+}
+
+.btn-reconnect {
+	background: #e74c3c;
+	color: var(--body-color);
+	border: 0;
+	border-radius: 0;
+	margin: 0;
+}
+
+#input,
+#form .input,
+#form,
+#chat .userlist .count {
+	background-color: inherit;
+}
+
+.channel-list-item[data-type="lobby"] {
+	color: #3d99db;
+}
+
+.channel-list-item[data-type="lobby"]:hover,
+.channel-list-item[data-type="lobby"].active {
+	color: #93c7eb;
+}
+
+/* Hide close button on channels, it is not used that frequently */
+.channel-list-item[data-type="channel"] .close-tooltip {
+	display: none;
+}
+
+.channel-list-item.active {
+	background-color: var(--body-bg-color);
+}
+
+#footer {
+	height: 43px;
+	line-height: 43px;
+}
+
+.context-menu-item.active,
+.textcomplete-item:hover,
+.textcomplete-menu .active,
+#chat .userlist .user.active,
+#footer {
+	color: var(--body-color);
+	background-color: var(--background-light-color);
+}
+
+#chat .self {
+	/* same as background color, but lighter */
+	background: linear-gradient(to right, hsla(0, 0%, 12%) 5px, #333333 5px);
+}
+
+#form,
+#viewport .lt::after,
+#chat .header,
+#chat .content,
+#chat .userlist {
+	border-color: var(--background-light-color);
+}
+
+#chat .userlist .search,
+#form .input {
+	border: 0;
+	color: var(--body-color);
+}
+
+#chat.colored-nicks .user.color-1,
+#chat.colored-nicks .user.color-17 {
+	color: #ef4657;
+}
+
+#chat.colored-nicks .user.color-2,
+#chat.colored-nicks .user.color-18 {
+	color: #ff93a4;
+}
+
+#chat.colored-nicks .user.color-3,
+#chat.colored-nicks .user.color-19 {
+	color: #ffb03b;
+}
+
+#chat.colored-nicks .user.color-4,
+#chat.colored-nicks .user.color-20 {
+	color: #cc7d08;
+}
+
+#chat.colored-nicks .user.color-5,
+#chat.colored-nicks .user.color-21 {
+	color: #ffd34e;
+}
+
+#chat.colored-nicks .user.color-6,
+#chat.colored-nicks .user.color-22 {
+	color: #cca01b;
+}
+
+#chat.colored-nicks .user.color-7,
+#chat.colored-nicks .user.color-23 {
+	color: #acf046;
+}
+
+#chat.colored-nicks .user.color-8,
+#chat.colored-nicks .user.color-24 {
+	color: #d5f572;
+}
+
+#chat.colored-nicks .user.color-9,
+#chat.colored-nicks .user.color-25 {
+	color: #499e8d;
+}
+
+#chat.colored-nicks .user.color-10,
+#chat.colored-nicks .user.color-26 {
+	color: #b5ffe1;
+}
+
+#chat.colored-nicks .user.color-11,
+#chat.colored-nicks .user.color-27 {
+	color: #35a7ff;
+}
+
+#chat.colored-nicks .user.color-12,
+#chat.colored-nicks .user.color-28 {
+	color: #91a6ff;
+}
+
+#chat.colored-nicks .user.color-13,
+#chat.colored-nicks .user.color-29 {
+	color: #975af2;
+}
+
+#chat.colored-nicks .user.color-14,
+#chat.colored-nicks .user.color-30 {
+	color: #ff88dc;
+}
+
+#chat.colored-nicks .user.color-15,
+#chat.colored-nicks .user.color-31 {
+	color: #bd8d46;
+}
+
+#chat.colored-nicks .user.color-16,
+#chat.colored-nicks .user.color-32 {
+	color: #f0c079;
+}
+
+#chat .msg[data-type="motd"] .text, /* thelounge <= 4.2.0-pre.2 */
+#chat .msg[data-type="monospace_block"] .text,
+#chat .toggle-content {
+	background-color: var(--background-light-color);
+}
+
+#chat .toggle-content,
+#chat .toggle-text .body,
+#chat .toggle-type-error {
+	color: var(--body-color-muted);
+}
+
+#chat .chat-view[data-type="channel"] .msg.highlight .time {
+	color: var(--body-color);
+}
+
+#chat .chat-view[data-type="channel"] .highlight .toggle-content {
+	background-color: var(--body-bg-color);
+}
+
+#chat table.channel-list td {
+	color: #999;
+}
+
+#chat table.channel-list th,
+#chat table.ban-list th,
+#chat table.channel-list td,
+#chat table.ban-list td {
+	border-bottom-color: var(--background-light-color);
+}
+
+/* Increase contrast of some IRC colors */
+.irc-fg2 { color: #007ae6; }
+.irc-fg5 { color: #e969a7; }
+.irc-fg6 { color: #d20ff0; }
+.irc-fg12 { color: #66b2ff; }
+
+@media (max-width: 479px) {
+	#chat .msg[data-type="message"] .from .user::before {
+		content: "<";
+	}
+
+	#chat .msg[data-type="message"] .from .user::after {
+		content: ">";
+	}
+}
