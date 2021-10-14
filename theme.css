@@ -10,6 +10,22 @@
 	color: rgba(131, 148, 150, 0.9);
 }
 
+/* New 4.3.0 search input text color */
+form.message-search .input-wrapper input {
+    color: black;
+}
+
+/* New 4.3.0 search icon color */
+#chat form.message-search button {
+    display: flex;
+    color: #b7c5cc;
+}
+
+/* New 4.3.0 fixes round, square jumpy search */
+input[type="search"] {
+  -webkit-appearance: none;
+}
+
 :root {
 	--body-bg-color: #333333;
 	--window-bg-color: #333333;
