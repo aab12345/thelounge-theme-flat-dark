@@ -23,16 +23,16 @@
 </p>
 
 <p align="center">
-<a href="https://www.buymeacoffee.com/zen262176" target="_blank"><img src="https://lounge-group.co.uk/by-me-a-coffee.png" alt="Buy Me A Coffee"></a>
+<a href="https://www.buymeacoffee.com/aab12345" target="_blank"><img src="https://lounge-group.co.uk/by-me-a-coffee.png" alt="Buy Me A Coffee"></a>
 </p>
 
-## Installation :sparkles: (https://bit.ly/2SI88KA)
+## Installation :sparkles: (https://bit.ly/3vaypjX)
 Install this theme with npm:
 
 ```sh
 thelounge install thelounge-theme-flat-dark
 ```
 
-## Issues :sparkles: <a href="https://github.com/aab12345/thelounge-theme-flat-dark/issues?q=is%3Aopen+is%3Aissue"> <img alt="Issues Opened" src="https://img.shields.io/github/issues/aab12345/thelounge-theme-flat-dark?color=green&style=plastic"></a> <a href="https://github.com/aab12345/thelounge-theme-flat-dark/issues?q=is%3Aissue+is%3Aclosed"> <img alt="Issues Closed" src="https://img.shields.io/github/issues-closed/el-profesor926/thelounge-theme-flat-dark?color=orange&style=plastic"></a> <br />
+## Issues :sparkles: <a href="https://github.com/aab12345/thelounge-theme-flat-dark/issues?q=is%3Aopen+is%3Aissue"> <img alt="Issues Opened" src="https://img.shields.io/github/issues/aab12345/thelounge-theme-flat-dark?color=green&style=plastic"></a> <a href="https://github.com/aab12345/thelounge-theme-flat-dark/issues?q=is%3Aissue+is%3Aclosed"> <img alt="Issues Closed" src="https://img.shields.io/github/issues-closed/aab12345/thelounge-theme-flat-dark?color=orange&style=plastic"></a> <br />
 If you have an issue, change request or comments about this theme please report it below:<br/>
 <a href="https://github.com/aab12345/thelounge-theme-flat-dark/issues">/thelounge-theme-flat-dark/issues</a>
