@@ -29,14 +29,14 @@ jobs:
           yarn config set version-git-tag false
       - name: Bump version
         env:
-          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          AUTH_GITHUB_TOKEN: ${{ secrets.AUTH_GITHUB_TOKEN }}
         run: |
           version=$(echo "$GITHUB_REF" | sed "s/refs\/tags\/v//")
           echo "Bumping version to $version"
           yarn version --new-version $version
           git add package.json
           git commit -m "Bump version to $version"
-          git push "https://$GITHUB_ACTOR:$GITHUB_TOKEN@github.com/$GITHUB_REPOSITORY" HEAD:master
+          git push "https://$GITHUB_ACTOR:$AUTH_GITHUB_TOKEN@github.com/$GITHUB_REPOSITORY" HEAD:master
       - name: Publish
         run: yarn publish
         env:
