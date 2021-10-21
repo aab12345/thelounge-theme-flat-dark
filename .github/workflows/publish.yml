@@ -1,23 +1,43 @@
-name: "publish"
+name: Publish
 
 on:
-    push:
-        branches: main
-
+  push:
+    branches: main
+    
 jobs:
-    release:
-        name: publish
-        runs-on: ubuntu-latest
-        steps:
-            - name: checkout
-              uses: actions/checkout@main
-            - name: node
-              uses: actions/setup-node@v1
-              with:
-                  node-version: 12
-                  registry-url: https://registry.npmjs.org
-            - name: publish
-              run: npm publish --access public
-              working-directory: thelounge-theme-flat-dark
-              env:
-                  NODE_AUTH_TOKEN: ${{secrets.NPM_AUTH_TOKEN}}
+  publish:
+    name: Publish
+    
+    runs-on: ubuntu-latest
+    
+    steps:
+      - uses: actions/checkout@master
+        
+      - name: Setup Node.js
+        uses: actions/setup-node@v1
+        with:
+          node-version: 12.x
+          registry-url: "https://registry.npmjs.org/"
+
+      - name: Install
+        run: yarn --frozen-lockfile --non-interactive
+
+      - name: Setup git and yarn
+        run: |
+          git config user.email "zen262176@zen.co.uk"
+          git config user.name "aab12345"
+          yarn config set version-git-tag false
+      - name: Bump version
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: |
+          version=$(echo "$GITHUB_REF" | sed "s/refs\/tags\/v//")
+          echo "Bumping version to $version"
+          yarn version --new-version $version
+          git add package.json
+          git commit -m "Bump version to $version"
+          git push "https://$GITHUB_ACTOR:$GITHUB_TOKEN@github.com/$GITHUB_REPOSITORY" HEAD:master
+      - name: Publish
+        run: yarn publish
+        env:
+          NODE_AUTH_TOKEN: ${{ secrets.NPM_TOKEN }}
