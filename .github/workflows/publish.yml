@@ -1,25 +1,23 @@
-name: npm-publish
+name: "publish"
+
 on:
-  push:
-    branches:
-      - main
+    push:
+        branches: main
+
 jobs:
-  npm-publish:
-    name: npm-publish
-    runs-on: ubuntu-latest
-    steps:
-    - name: Checkout repository
-      uses: actions/checkout@master
-    - name: Set up Node.js
-      uses: actions/setup-node@master
-      with:
-        node-version: 12.0.0
-    - name: Publish if version has been updated
-      uses: houtianze/npm-publish-action@master
-      with:
-        tag_name: "v%s"
-        tag_message: "v%s"
-        commit_pattern: "^(?:Release|Version) (\\S+)"
-      env:
-        GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }} # Leave this as is, it's automatically generated
-        NPM_AUTH_TOKEN: ${{ secrets.NPM_AUTH_TOKEN }} # You need to set this in your repo settings
+    release:
+        name: publish
+        runs-on: ubuntu-latest
+        steps:
+            - name: checkout
+              uses: actions/checkout@v2.1.1
+            - name: node
+              uses: actions/setup-node@v1.4.2
+              with:
+                  node-version: 12
+                  registry-url: https://registry.npmjs.org
+            - name: publish
+              run: npm publish --access public
+              working-directory: thelounge-theme-flat-dark
+              env:
+                  NODE_AUTH_TOKEN: ${{secrets.NPM_AUTH_TOKEN}}
