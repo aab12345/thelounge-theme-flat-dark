@@ -27,7 +27,7 @@
     "stylelint": "^13.7.1",
     "stylelint-config-standard": "^20.0.0"
   },
-  "scripts": {
-    "test": "stylelint theme.css"
-  }
+  "dependencies": {
+        "thelounge": "4.2.0"
+    }
 }
