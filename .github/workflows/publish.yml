@@ -18,6 +18,6 @@ jobs:
                   registry-url: https://registry.npmjs.org
             - name: publish
               run: npm publish --access public
-              working-directory: /
+              working-directory: thelounge-theme-flat-dark
               env:
                   NODE_AUTH_TOKEN: ${{secrets.NPM_AUTH_TOKEN}}
