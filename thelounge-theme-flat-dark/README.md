@@ -23,7 +23,7 @@
 </p>
 
 <p align="center">
-<a href="https://www.buymeacoffee.com/aab12345" target="_blank"><img src="https://lounge-group.co.uk/by-me-a-coffee.png" alt="Buy Me A Coffee"></a>
+<a href="https://www.buymeacoffee.com/aab12345" target="_blank">Buy Me A Coffee</a>
 </p>
 
 ## Installation :sparkles:
