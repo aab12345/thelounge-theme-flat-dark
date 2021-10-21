@@ -36,7 +36,7 @@ jobs:
           yarn version --new-version $version
           git add package.json
           git commit -m "Bump version to $version"
-          git push "https://$GITHUB_ACTOR:$AUTH_GITHUB_TOKEN@github.com/$GITHUB_REPOSITORY" HEAD:master
+          git push "https://$GITHUB_ACTOR:$AUTH_GITHUB_TOKEN@github.com/$GITHUB_REPOSITORY" HEAD:main
       - name: Publish
         run: yarn publish
         env:
