@@ -19,7 +19,7 @@ form.message-search .input-wrapper input {
 
 /* Fixes 4.3.0 Userlist overlay issue */
 #chat .msg {
-    position:static !important;
+    Position: sticky;
 }
 
 /* New 4.3.0 search icon color */
@@ -222,6 +222,7 @@ body {
 #chat .content,
 #chat .userlist {
 	border-color: var(--background-light-color);
+	Position: sticky;
 }
 
 #chat .userlist .search,
