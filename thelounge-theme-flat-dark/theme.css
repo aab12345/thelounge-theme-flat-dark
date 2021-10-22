@@ -4,7 +4,7 @@
  *
  * License: MIT
  * Compatible with The Lounge 4.2.0/4.3.0
- * Last Updated: 21/10/2021
+ * Last Updated: 22/10/2021
  */
 
 /* Samsung Internet and Microsoft Edge (yes, both of them use -webkit- prefix) */
@@ -21,43 +21,6 @@ form.message-search .input-wrapper input {
 #chat form.message-search button {
     display: flex;
     color: #b7c5cc;
-}
-
-/* Chat message input box */
-#form {
-  background: var(--chat-background);
-  border-top: 0;
-  padding: 10px;
-  margin: 0 10px 10px 10px; }
-
-#form::before {
-    position: absolute;
-    top: 0;
-    left: 0;
-    bottom: 0;
-    right: 0;
-    background: #373a40;
-    content: ' ';
-    z-index: 1;
-    border-radius: 10px; }
-
-#form * {
-    z-index: 1; 
-}
-
-#form #input {
-    background: transparent;
-    height: 25px;
-    line-height: 25px;
-    margin: 0;
-    padding: 0px 10px;
-    color: var(--off-white); }
-    #form #input::placeholder {
-      color: rgba(var(--off-white), 0.5); 
-}
-
-#form #submit, #form #upload {
-    color: #abb8c9; 
 }
 
 
@@ -255,18 +218,6 @@ body {
 #chat .content,
 #chat .userlist {
 	border-color: var(--background-light-color);
-}
-
-#chat .userlist .user-mode::before {
-    background: transparent;
-    color: #202226;
-    background: #55606c;
-    margin-right: auto;
-    border-radius: 999px;
-    display: inline-block;
-    padding: 0 8px;
-    margin-left: 16px;
-    margin-bottom: 4px;
 }
 
 #chat .userlist .search,
