@@ -17,12 +17,16 @@ form.message-search .input-wrapper input {
     color: black;
 }
 
+/* Fixes 4.3.0 Userlist overlay issue */
+#chat .msg {
+    position:static !important;
+}
+
 /* New 4.3.0 search icon color */
 #chat form.message-search button {
     display: flex;
     color: #b7c5cc;
 }
-
 
 :root {
 	--body-bg-color: #333333;
