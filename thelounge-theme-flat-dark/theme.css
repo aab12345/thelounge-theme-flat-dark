@@ -12,6 +12,11 @@
 	color: rgba(131, 148, 150, 0.9);
 }
 
+/* New 4.3.0 FIX #4279 */
+#chat .userlist {
+	z-index: 1;
+}
+
 /* New 4.3.0 search input text color */
 form.message-search .input-wrapper input {
     color: black;
