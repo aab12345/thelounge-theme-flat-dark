@@ -3,8 +3,8 @@
  * By aab12345
  *
  * License: MIT
- * Compatible with The Lounge 4.2.0/4.3.0
- * Last Updated: 22/10/2021
+ * Compatible with The Lounge 4.2.0 / 4.3.0
+ * Last Updated: 23/10/2021
  */
 
 /* Samsung Internet and Microsoft Edge (yes, both of them use -webkit- prefix) */
@@ -17,15 +17,31 @@ form.message-search .input-wrapper input {
     color: black;
 }
 
-/* Fixes 4.3.0 Userlist overlay issue */
-#chat .msg {
-    Position: sticky;
-}
-
 /* New 4.3.0 search icon color */
 #chat form.message-search button {
     display: flex;
     color: #b7c5cc;
+}
+
+/* Stop search field sporadically going from square edges to rounded edges  */
+input[type=search] {
+  -webkit-appearance: none;
+}
+
+/* Hide close button on channels, it is not used that frequently */
+#sidebar .chan.channel .close {
+    display: none;
+}
+
+/* 4.2.0 - Show nick in type message box */
+#form #nick { 
+  display: unset; 
+}
+
+/* 4.2.0 - Change version checker color box */
+#version-checker.up-to-date {
+    background-color: #1e1e1e;
+    color: #ffffff;
 }
 
 :root {
@@ -33,7 +49,7 @@ form.message-search .input-wrapper input {
 	--window-bg-color: #333333;
 	--body-color: #fff;
 	--body-color-muted: #b7c5d1;
-	--link-color: #268bd2;
+	--link-color: #84ce88;
 	--unread-marker-color: #268bd2;
 	--date-marker-color: #edf10a;
 	--highlight-bg-color: #3c3838;
@@ -62,10 +78,6 @@ form.message-search .input-wrapper input {
 html {
 	scrollbar-color: hsl(192, 100%, 25%) hsla(192, 100%, 25%, 10%);
 	scrollbar-width: thin;
-}
-
-#form #nick { 
-  display: unset; 
 }
 
 .logo-inverted {
@@ -222,7 +234,6 @@ body {
 #chat .content,
 #chat .userlist {
 	border-color: var(--background-light-color);
-	Position: sticky;
 }
 
 #chat .userlist .search,
