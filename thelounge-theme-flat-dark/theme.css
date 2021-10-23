@@ -12,9 +12,9 @@
 	color: rgba(131, 148, 150, 0.9);
 }
 
-/* New 4.3.0 FIX #4279 */
+/* New 4.3.0 FIX #4279 "z-index: 1;" doesn't work (needs testing) */
 #chat .userlist {
-	z-index: 1;
+	position: relative;
 }
 
 /* New 4.3.0 search input text color */
@@ -154,8 +154,7 @@ kbd {
 }
 
 #loading,
-#chat .
-,
+#chat .userlist,
 .window,
 body {
 	background-color: var(--body-bg-color);
@@ -231,7 +230,6 @@ body {
 	/* same as background color, but lighter */
 	background: linear-gradient(to right, hsla(0, 0%, 12%) 5px, #333333 5px);
 }
-
 
 #form,
 #viewport .lt::after,
