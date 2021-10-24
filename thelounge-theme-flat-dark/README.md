@@ -17,7 +17,7 @@
 		alt="Total downloads on npm"
 		src="https://img.shields.io/npm/dy/thelounge-theme-flat-dark.svg?colorA=333a41&colorB=007dc7&maxAge=3600&label=Downloads"></a>
 	<a href="https://github.com/aab12345/thelounge-theme-flat-dark/actions/workflows/publish.yml"><img
-		alt="Total downloads on npm"
+		alt="Build Status"
 		src="https://github.com/aab12345/thelounge-theme-flat-dark/actions/workflows/publish.yml/badge.svg"></a>	
 </p>
 
