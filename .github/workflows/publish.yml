@@ -1,8 +1,6 @@
 name: "🚀 Publish"
 
-on:
-    push:
-        branches: main
+on: [workflow_dispatch]
 
 jobs:
     release:
