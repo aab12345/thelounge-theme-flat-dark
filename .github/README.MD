@@ -22,11 +22,11 @@
 </p>
 
 <p align="center">
-	<img src="../thelounge-theme-flat-dark/Screenshots/Template_01.png" alt="Screenshot of the Flat Dark theme for The Lounge Chat" >
+	<img src="../thelounge-theme-flat-dark/Screenshots/Template_01.png" alt="Screenshot of the Flat Dark theme for The Lounge Chat" height=600>
 </p>
 
 <p align="center">
-	<img src="../thelounge-theme-flat-dark/Screenshots/Screenshot_Mobile_Render_01.png" alt="Screenshot of the Flat Dark theme for The Lounge Chat" >
+	<img src="../thelounge-theme-flat-dark/Screenshots/Screenshot_Mobile_Demo_01.png" alt="Screenshot of the Flat Dark theme for The Lounge Chat" width=300>
 </p>
 
 <p align="center">
