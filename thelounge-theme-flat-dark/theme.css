@@ -49,6 +49,14 @@ input[type=search] {
     color: #ffffff;
 }
 
+/* Display action messages in italics */
+#chat .msg[data-type="action"] .from::before,
+#chat .msg[data-type="action"] .from,
+#chat .msg[data-type="action"] .content,
+#chat .msg[data-type="action"] .user {
+	font-style: italic;
+}
+
 :root {
 	--body-bg-color: #333333;
 	--window-bg-color: #333333;
