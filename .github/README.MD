@@ -26,7 +26,8 @@
 <a href="https://www.buymeacoffee.com/aab12345" target="_blank">Buy Me A Coffee</a>
 </p>
 
-## Installation :sparkles: (https://bit.ly/3p3cNEV)
+[NPM Package Page](https://www.npmjs.com/package/thelounge-theme-flat-dark)
+## Installation :sparkles:
 Install this theme with npm:
 
 ```sh
