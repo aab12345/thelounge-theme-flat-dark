@@ -1,5 +1,5 @@
 <h1 align="center">
-	A flat dark theme for The Lounge Chat
+	<img src="../thelounge-theme-flat-dark/img/Flat-Dark-Logo.png" alt="Logo">
 </h1>
 
 <h3 align="center">
