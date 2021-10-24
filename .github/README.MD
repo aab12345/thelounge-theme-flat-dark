@@ -26,6 +26,10 @@
 </p>
 
 <p align="center">
+	<img src="../thelounge-theme-flat-dark/Screenshots/Screenshot_Mobile_Render_01.png" alt="Screenshot of the Flat Dark theme for The Lounge Chat" >
+</p>
+
+<p align="center">
 <a href="https://www.buymeacoffee.com/aab12345" target="_blank">Buy Me A Coffee</a>
 </p>
 
