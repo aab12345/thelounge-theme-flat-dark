@@ -1,0 +1,4 @@
+# .npmignore
+Screenshots
+node_modules
+img
