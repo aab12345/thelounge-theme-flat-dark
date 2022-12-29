@@ -25,10 +25,6 @@
 	<img src="https://github.com/aab12345/thelounge-theme-flat-dark/blob/main/thelounge-theme-flat-dark/Screenshots/Screenshot1.png" alt="Screenshot of the Flat Dark theme for The Lounge Chat">
 </p>
 
-<p align="center">
-<a href="https://www.buymeacoffee.com/aab12345" target="_blank">Buy Me A Coffee</a>
-</p>
-
 ## Installation :sparkles:
 Install this theme with npm:
 
