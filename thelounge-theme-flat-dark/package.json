@@ -1,6 +1,6 @@
 {
   "name": "thelounge-theme-flat-dark",
-  "version": "1.5.6",
+  "version": "1.5.9",
   "description": "A simple flat theme with dark colours",
   "main": "package.json",
   "thelounge": {
@@ -8,7 +8,7 @@
     "type": "theme",
     "css": "theme.css",
     "themeColor": "#1e1e1e"
-  },
+  },9
   "license": "MIT",
   "homepage": "https://github.com/aab12345/thelounge-theme-flat-dark/",
   "repository": {
